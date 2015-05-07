@@ -43,8 +43,8 @@
 </html>
 ```
 - Next we will add some things that tell our index that we are working with AngularJS
-  - ng-app loads our primary angular module. Let's name the module 'userProfiles'
-  - ng-controller loads our controller for the view. Let's name the controller 'MainController'
+  - ng-app loads our primary angular module. Lets name the module 'userProfiles'
+  - ng-controller loads our controller for the view. Lets name the controller 'MainController'
 
 ``` html
 <!DOCTYPE html>
@@ -88,7 +88,7 @@ app.controller('MainController', function($scope) {
 ``` javascript
 var app = angular.module('userProfiles');
 
-app.service('mainService', function() {
+app.service('mainService', function() { //caps for MainService, create and submit pull request
 
 });
 ```
@@ -231,7 +231,7 @@ Now we have an object named "$scope.users" which represents our data. Because it
 ```
 
 # Step 6 - The View
-Now we have our data in our view, but it's a little ugly. Let's do some simple configuration to make it a bit more userfriendly. Typically when you have an array of data, it's a good idea to use ng-repeat to organize it.
+Now we have our data in our view, but its a little ugly. Lets do some simple configuration to make it a bit more userfriendly. Typically when you have an array of data, its a good idea to use ng-repeat to organize it.
 
 ``` html
 <div ng-repeat="user in users">
